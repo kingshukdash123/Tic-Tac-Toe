@@ -14,6 +14,11 @@ body {
     font-weight: 900;
     margin-top: 10px;
 }
+@media (max-width: 415px) {
+    #header {
+        font-size: 2.5rem;
+    }
+}
 .container {
     height: 60vh;
     display: flex;
@@ -39,6 +44,21 @@ body {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 4rem;
 }
+@media (max-width: 415px) {
+    .game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        width: 90%;
+        gap: 0.8rem;
+    }
+    .box {
+        width: calc(33.33% - 0.8rem);
+        aspect-ratio: 1 / 1;
+        font-size: 3rem;
+    }
+}
 #new-btn {
     padding: 1rem;
     border-radius: 1rem;
@@ -59,4 +79,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 415px) {
+    .msg-container {
+        font-size: 1.5rem;
+    }
 }
